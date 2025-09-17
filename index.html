@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-menu">
+                <ul class="nav-links">
+                    <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-chart-pie"></i> Overview & Analytics</a></li>
+                    <li><a href="#"><i class="fas fa-file-upload"></i> Submit New Claims</a></li>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> Reports</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> System Configurations</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <h2 class="header-page-title">DASHBOARD</h2>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search claims, states, or policies...">
+                </div>
+                <div class="header-tools">
+                    <div class="lang-selector">
+                        <span>US English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <i class="fas fa-bell header-icon"></i>
+                    <i class="fas fa-question-circle header-icon"></i>
+                </div>
+            </header>
+            
+            <div class="page-content">
+                <div class="tabs">
+                    <button class="tab-link active">National Policy & Oversight Authority</button>
+                    <button class="tab-link">Budget Allocation</button>
+                </div>
+
+                <div class="summary-cards">
+                    <div class="card summary-card">
+                        <i class="fas fa-folder-open card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Total Claims Nationwide</p>
+                            <p class="card-value">45,890</p>
+                            <p class="card-change"><i class="fas fa-arrow-up"></i> +8.2%</p>
+                        </div>
+                    </div>
+                    <div class="card summary-card">
+                        <i class="fas fa-rupee-sign card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Budget Allocated</p>
+                            <p class="card-value">₹2,450Cr</p>
+                            <p class="card-detail">FY 2024-25</p>
+                        </div>
+                    </div>
+                    <div class="card summary-card">
+                        <i class="fas fa-flag card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">States Covered</p>
+                            <p class="card-value">28</p>
+                            <p class="card-detail">+2 new states</p>
+                        </div>
+                    </div>
+                    <div class="card summary-card">
+                        <i class="fas fa-check-double card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Policy Compliance</p>
+                            <p class="card-value">87%</p>
+                            <p class="card-change"><i class="fas fa-arrow-up"></i> +5% this quarter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widgets-row">
+                    <div class="card chart-card">
+                        <h3 class="card-main-title">Claims Status Distribution</h3>
+                        <p class="card-subtitle">National overview of forest rights claims status across all states</p>
+                        <div class="donut-chart-container">
+                            <div class="donut-chart"></div>
+                        </div>
+                        <div class="chart-legend">
+                            <span><i class="fas fa-circle" style="color: #27AE60;"></i> Recognized Rights</span>
+                            <span><i class="fas fa-circle" style="color: #2ECC71;"></i> Under Review</span>
+                            <span><i class="fas fa-circle" style="color: #F1C40F;"></i> Rejected Claims</span>
+                            <span><i class="fas fa-circle" style="color: #E67E22;"></i> Appeals Pending</span>
+                        </div>
+                    </div>
+                    <div class="card chart-card">
+                        <h3 class="card-main-title">Claims by State</h3>
+                        <p class="card-subtitle">State-wise breakdown of total claims submitted and approved</p>
+                        <div class="bar-chart-container">
+                            <div class="y-axis">
+                                <span>10000</span><span>7500</span><span>5000</span><span>2500</span><span>0</span>
+                            </div>
+                            <div class="x-axis">
+                                <div class="bar-group">
+                                    <div class="bar approved" style="height: 70%;"></div>
+                                    <div class="bar total" style="height: 85%;"></div>
+                                    <span class="bar-label">Odisha</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar approved" style="height: 65%;"></div>
+                                    <div class="bar total" style="height: 80%;"></div>
+                                    <span class="bar-label">Jharkhand</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar approved" style="height: 80%;"></div>
+                                    <div class="bar total" style="height: 95%;"></div>
+                                    <span class="bar-label">Maharashtra</span>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="chart-legend">
+                            <span><i class="fas fa-circle" style="color: #58D68D;"></i> Approved Claims</span>
+                            <span><i class="fas fa-circle" style="color: #239B56;"></i> Total Claims</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widgets-row">
+                    <div class="card policy-card">
+                        <h3 class="card-main-title">Policy Implementation Trends</h3>
+                        <p class="card-subtitle">Monthly progress tracking across all FRA implementation stages</p>
+                        <div class="policy-viz">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Policy trend visualization</p>
+                        </div>
+                    </div>
+                    <div class="card policy-card">
+                         <h3 class="card-main-title">Policy Recommendations</h3>
+                        <p class="card-subtitle">AI-powered insights for policy optimization and resource allocation</p>
+                        <ul class="recommendations-list">
+                            <li><i class="far fa-check-circle"></i> Accelerate digitization initiatives in Odisha and Chhattisgarh regions</li>
+                            <li><i class="far fa-check-circle"></i> Increase budget allocation for northeastern states to improve coverage</li>
+                            <li><i class="far fa-check-circle"></i> Deploy additional field officers in high-claim density areas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card quick-actions-card">
+                     <h3 class="card-main-title">Quick Actions</h3>
+                     <p class="card-subtitle">Frequently used administrative functions and policy tools</p>
+                     <div class="actions-container">
+                         <button class="action-btn"><i class="fas fa-file-export"></i> Generate Report</button>
+                         <button class="action-btn"><i class="fas fa-cloud-upload-alt"></i> Upload Policy</button>
+                         <button class="action-btn"><i class="fas fa-chart-bar"></i> View Analytics</button>
+                         <button class="action-btn"><i class="fas fa-map-marked-alt"></i> Open Map</button>
+                     </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
