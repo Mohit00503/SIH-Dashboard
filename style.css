@@ -55,7 +55,14 @@ body {
     text-decoration: none; font-size: 15px; font-weight: 500;
     color: var(--text-secondary); transition: all 0.2s ease;
 }
-.nav-links li a i { font-size: 16px; width: 20px; }
+/* This CSS rule was updated to include the emoji span */
+.nav-links li a i,
+.nav-links li a .nav-icon { 
+    font-size: 16px; 
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
 .nav-links li a:hover { background-color: #F4F6F7; color: var(--text-primary); }
 .nav-links li a.active {
     background-color: var(--light-green-bg);
